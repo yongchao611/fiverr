@@ -8,8 +8,8 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  // Cloudflare Pages requires export mode
-  output: 'export',
+  // Using @cloudflare/next-on-pages for dynamic features
+  // Do NOT use output: 'export' with @cloudflare/next-on-pages
 }
 
 module.exports = nextConfig
