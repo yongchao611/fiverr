@@ -9,6 +9,17 @@ import { autoFormatContent } from '@/lib/formatContent'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 
+// Generate static params for static export
+export async function generateStaticParams() {
+  // For static export, return empty array or sample IDs
+  // In production, you would fetch from database or CMS
+  return [
+    { id: '1' },
+    { id: '2' },
+    { id: '3' },
+  ]
+}
+
 // Fetch article from API
 async function getArticle(id: string) {
   try {
