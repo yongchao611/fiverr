@@ -8,8 +8,8 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  // Using @cloudflare/next-on-pages for dynamic features
-  // Do NOT use output: 'export' with @cloudflare/next-on-pages
+  output: 'export', // Use static export for Cloudflare Pages
+  trailingSlash: true, // Better compatibility with static hosting
 }
 
 module.exports = nextConfig
